@@ -10,7 +10,7 @@ miConexion= pymongo.MongoClient("mongodb://localhost:27017")
 
 baseDatos = miConexion["GESTION-PRODUCTOS"]
 
-productos = baseDatos["PRODUCTOS"]
+productos = baseDatos["PRODUTOS"]
 categoria = baseDatos["CATEGORIAS"]
 usuarios = baseDatos["USUARIOS"]
 

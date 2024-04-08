@@ -45,12 +45,18 @@
                             <!-- <i class="fa fa-edit text-warning" title="editar"></i>
                             <i class="fa fa-trash text-danger" title="eliminar"></i> -->
                             <div class="acciones">
-                                <a href="/editarProducto">
+                                <!-- <a href="/editarProducto">
+                                    <button type="button" class="btn btn-primary">Editar</button>
+                                </a> -->
+                                <a href="/editarProducto/{{producto._id}}">
                                     <button type="button" class="btn btn-primary">Editar</button>
                                 </a>
                                 <a href="/eliminarProducto/{{p['_id']}}">
                                     <button type="submit" class="btn btn-danger">Eliminar</button>
                                 </a>
+                                <!-- <form action="{{ url_for('eliminar_producto', id=producto._id) }}" method="post">
+                                    <input type="submit" value="Eliminar">
+                                </form> -->
                                 
                             </div>
                         </td>
