@@ -22,3 +22,9 @@ def login ():
     except pymongo.errors as error:
         mensaje = error
     return render_template("login.html",estado=estado,mensaje=mensaje)
+
+@app.route("/salir")
+def salir():
+    session.clear()
+    mensaje="Se ha cerrado sesion"
+    return render_template("login.html",mensaje=mensaje)
